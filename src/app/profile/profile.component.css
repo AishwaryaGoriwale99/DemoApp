@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+#wrap {
+    background-color: rgb(51, 156, 221);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    padding-bottom: 20px;
+
+}
+
+#main {
+    display:flex;
+    padding-top: 80px;
+
+}
+
+nav {
+    /* background-color: transparent; */
+    position:absolute;
+    /* top: 0; */
+    right: 0;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    /* margin: 0;
+    padding: 0; */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.Demo {
+    background-color: rgb(87, 175, 230);
+    padding: 3px;
+    margin-left: 130px;
+}

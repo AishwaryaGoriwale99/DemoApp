@@ -1,0 +1,91 @@
+<!--<ng-template #profile>
+    <div *ngIf="!editingProfile">
+      <h2>Profile</h2>
+      <div>
+        <p>First Name: {{ firstNameValue }}</p>
+        <p>Last Name: {{ lastNameValue }}</p>
+        <p>Email: {{ emailValue }}</p>
+        <p>Mobile No: {{ mobileValue }}</p>
+        <p>Age: {{ age }}</p>
+        <p>State: {{ stateValue }}</p>
+        <p>Country: {{ countryValue }}</p>
+        <p>Interests:</p>
+        <ul>
+          <li *ngFor="let interest of interests">{{ interest }}</li>
+        </ul>
+        <button type="button" (click)="editProfile()">Edit Profile</button>
+        <button type="button" (click)="editPhoto()">Edit Photo</button>
+      </div>
+    </div>
+    <div *ngIf="editingProfile">
+      <h2>Edit Profile</h2>
+       Editable profile fields --
+      <button type="button" (click)="saveProfile()">Save Profile</button>
+      <button type="button" (click)="cancelEdit()">Cancel</button>
+    </div>
+  </ng-template>-->
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <div id="wrap">
+        <div id="main">
+            <div id="sub">
+                <nav>
+                    <ul>
+                        <li><a href="#home"
+                                class="w3-bar-item w3-button w3-hover-none w3-border-white w3-topbar w3-hover-border-green">Home</a>
+                        </li>
+                        <li><a href="#aboutus"
+                                class="w3-bar-item w3-button w3-hover-none w3-border-white w3-topbar w3-hover-border-green">About
+                                Us</a></li>
+                        <li><a href="#job"
+                                class="w3-bar-item w3-button w3-hover-none w3-border-white w3-topbar w3-hover-border-green">Job</a>
+                        </li>
+                        <li><a href="#clients"
+                                class="w3-bar-item w3-button w3-hover-none w3-border-white w3-topbar w3-hover-border-green">Clients</a>
+                        </li>
+                        <li><a href="#employers"
+                                class="w3-bar-item w3-button w3-hover-none w3-border-white w3-topbar w3-hover-border-green">Employers</a>
+                        </li>
+                        <li><a href="#contactus"
+                                class="w3-bar-item w3-button w3-hover-none w3-border-white w3-topbar w3-hover-border-green">Contact
+                                Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="sub2">
+                <h3 class="Demo"> DEMO APP </h3>
+            </div>
+        </div>
+        <ng-template #profile>
+            <div *ngIf="!editingProfile">
+              <h2>Profile</h2>
+              <div>
+                <p>First Name: {{ firstNameValue }}</p>
+                <p>Last Name: {{ lastNameValue }}</p>
+                <p>Email: {{ emailValue }}</p>
+                <p>Mobile No: {{ mobileValue }}</p>
+                <p>Age: {{ age }}</p>
+                <p>State: {{ stateValue }}</p>
+                <p>Country: {{ countryValue }}</p>
+                <p>Interests:</p>
+                <ul>
+                  <li *ngFor="let interest of interests">{{ interest }}</li>
+                </ul>
+                <button type="button" (click)="editProfile()">Edit Profile</button>
+                <button type="button" (click)="editPhoto()">Edit Photo</button>
+              </div>
+            </div>
+            <div *ngIf="editingProfile">
+              <h2>Edit Profile</h2>
+               Editable profile fields --
+              <button type="button" (click)="saveProfile()">Save Profile</button>
+              <button type="button" (click)="cancelEdit()">Cancel</button>
+            </div>
+          </ng-template>
